@@ -195,6 +195,51 @@ html {
   color: var(--wp--preset--color--range);
 }
 
+.jetta-phone-strip {
+  display: grid;
+  gap: clamp(1rem, 2vw, 1.5rem);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.jetta-phone-shot {
+  background: #eef4e8;
+  border: 1px solid rgba(16, 20, 20, 0.14);
+  border-radius: 18px;
+  box-shadow: 0 18px 45px rgba(19, 38, 33, 0.14);
+  overflow: hidden;
+}
+
+.jetta-phone-shot:nth-child(1) {
+  background: #eef4e8 url("https://www.jetta.com/wp-content/uploads/2026/09/Mobile-GPS01.png") center top / cover no-repeat;
+}
+
+.jetta-phone-shot:nth-child(2) {
+  background: #eef4e8 url("https://www.jetta.com/wp-content/uploads/2026/09/Mobile-GPS02.png") center top / cover no-repeat;
+}
+
+.jetta-phone-shot:nth-child(3) {
+  background: #eef4e8 url("https://www.jetta.com/wp-content/uploads/2026/09/Mobile-GPS03.png") center top / cover no-repeat;
+}
+
+.jetta-phone-shot:nth-child(4) {
+  background: #eef4e8 url("https://www.jetta.com/wp-content/uploads/2026/09/Mobile-GPS04.png") center top / cover no-repeat;
+}
+
+.jetta-phone-shot:nth-child(5) {
+  background: #eef4e8 url("https://www.jetta.com/wp-content/uploads/2026/09/Mobile-GPS05.png") center top / cover no-repeat;
+}
+
+.jetta-phone-shot img {
+  display: block;
+  width: 100%;
+}
+
+.jetta-flow-copy {
+  display: grid;
+  gap: clamp(1.2rem, 3vw, 2rem);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 @media (max-width: 760px) {
   .jetta-hero {
     min-height: auto;
@@ -214,5 +259,14 @@ html {
 
   .jetta-logo img {
     max-width: 104px;
+  }
+
+  .jetta-phone-strip,
+  .jetta-flow-copy {
+    grid-template-columns: 1fr;
+  }
+
+  .jetta-phone-shot {
+    min-height: 46rem;
   }
 }
