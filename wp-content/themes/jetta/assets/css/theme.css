@@ -45,6 +45,24 @@ html {
   max-width: 128px;
 }
 
+.jetta-header .wp-block-navigation__submenu-container {
+  background: var(--wp--preset--color--chalk);
+  border: 1px solid rgba(16, 20, 20, 0.16);
+  border-radius: 8px;
+  box-shadow: 0 18px 45px rgba(19, 38, 33, 0.12);
+  min-width: 14rem !important;
+  padding: 0.45rem;
+}
+
+.jetta-header .wp-block-navigation__submenu-container .wp-block-navigation-item__content {
+  border-radius: 6px;
+  padding: 0.65rem 0.8rem;
+}
+
+.jetta-header .wp-block-navigation__submenu-container .wp-block-navigation-item__content:hover {
+  background: rgba(215, 255, 111, 0.42);
+}
+
 .jetta-hero {
   min-height: 82vh;
   position: relative;
