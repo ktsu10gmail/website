@@ -1,4 +1,3 @@
 ; Copy this file to .npmrc when the exact local npm proxy URL is confirmed.
-; Common Verdaccio-style port is 4873, but confirm before use.
-; registry=http://192.168.1.35:4873/
-
+; Expected local npm proxy URL:
+; registry=http://192.168.1.35:80/

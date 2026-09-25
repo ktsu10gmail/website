@@ -62,8 +62,15 @@ Do not track:
 
 ## npm Proxy
 
-The local network has an npm proxy host at `192.168.1.35`. Use this proxy for
-future Node-based theme build tooling once its exact registry URL is confirmed.
+The local network has an npm proxy host at `192.168.1.35`. The expected npm
+registry URL is:
+
+``` text
+http://192.168.1.35:80/
+```
+
+As of 2026-09-25, direct checks from this web server to that URL timed out, so
+the project does not enable a live `.npmrc` yet.
 
 Do not commit credentials or tokens. If the registry is unauthenticated, create a
 project-local `.npmrc` from `.npmrc.example`. If authentication is required,
