@@ -34,6 +34,17 @@ html {
   font-weight: 500;
 }
 
+.jetta-logo {
+  line-height: 0;
+  margin: 0;
+}
+
+.jetta-logo img {
+  display: block;
+  height: auto;
+  max-width: 128px;
+}
+
 .jetta-hero {
   min-height: 82vh;
   position: relative;
@@ -199,5 +210,9 @@ html {
 
   .jetta-shot {
     min-height: 16rem;
+  }
+
+  .jetta-logo img {
+    max-width: 104px;
   }
 }
