@@ -7,3 +7,4 @@ marketing website updates.
 |---|---|---|---|---|---|
 | 2026-09-25 | ktsu10gmail/golfgame | main | 14ba21f21c6c7915dd3eeff844e29fad8337faee | Initial web context setup | Website repo initialized locally; app repo inspected through GitHub. |
 | 2026-09-25 | ktsu10gmail/golfgame | main | 14ba21f21c6c7915dd3eeff844e29fad8337faee | WordPress theme scaffold | Verified app README and decision-scoring docs before drafting homepage copy. |
+| 2026-09-25 | ktsu10gmail/golfgame | main | 14ba21f21c6c7915dd3eeff844e29fad8337faee | Initial public site design | Created editable WordPress pages and used a current Playwright capture from the live app as the first product visual. |
