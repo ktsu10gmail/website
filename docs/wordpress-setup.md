@@ -59,3 +59,12 @@ Do not track:
 - cache files
 - database dumps
 - secrets
+
+## npm Proxy
+
+The local network has an npm proxy host at `192.168.1.35`. Use this proxy for
+future Node-based theme build tooling once its exact registry URL is confirmed.
+
+Do not commit credentials or tokens. If the registry is unauthenticated, create a
+project-local `.npmrc` from `.npmrc.example`. If authentication is required,
+store the token outside Git.
