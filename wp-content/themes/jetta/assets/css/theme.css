@@ -1,0 +1,102 @@
+body {
+  background:
+    linear-gradient(90deg, rgba(16, 20, 20, 0.045) 1px, transparent 1px) 0 0 / 34px 34px,
+    linear-gradient(0deg, rgba(16, 20, 20, 0.035) 1px, transparent 1px) 0 0 / 34px 34px,
+    var(--wp--preset--color--chalk);
+}
+
+.wp-site-blocks {
+  overflow-x: hidden;
+}
+
+.jetta-header {
+  border-bottom: 1px solid rgba(16, 20, 20, 0.14);
+}
+
+.jetta-brand {
+  font-family: var(--wp--preset--font-family--editorial-serif);
+  font-size: 1.55rem;
+  font-weight: 500;
+}
+
+.jetta-hero {
+  min-height: 82vh;
+  position: relative;
+}
+
+.jetta-hero::before {
+  background:
+    radial-gradient(circle at 18% 22%, rgba(215, 255, 111, 0.42), transparent 22rem),
+    linear-gradient(135deg, rgba(40, 98, 79, 0.18), transparent 42%);
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.jetta-hero > * {
+  position: relative;
+}
+
+.jetta-kicker {
+  color: var(--wp--preset--color--fairway);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.jetta-panel {
+  border: 1px solid rgba(16, 20, 20, 0.16);
+  border-radius: 8px;
+  box-shadow: 0 18px 50px rgba(19, 38, 33, 0.08);
+}
+
+.jetta-stat {
+  border-left: 3px solid var(--wp--preset--color--range);
+  padding-left: 1rem;
+}
+
+.jetta-loop {
+  counter-reset: loop-step;
+}
+
+.jetta-loop li {
+  counter-increment: loop-step;
+  list-style: none;
+  margin: 0 0 1rem;
+  padding-left: 3.2rem;
+  position: relative;
+}
+
+.jetta-loop li::before {
+  align-items: center;
+  background: var(--wp--preset--color--range);
+  border-radius: 50%;
+  color: var(--wp--preset--color--ink);
+  content: counter(loop-step);
+  display: flex;
+  font-weight: 700;
+  height: 2rem;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 2rem;
+}
+
+.jetta-dark-band {
+  background: var(--wp--preset--color--pine);
+  color: var(--wp--preset--color--chalk);
+}
+
+.jetta-dark-band a {
+  color: var(--wp--preset--color--range);
+}
+
+@media (max-width: 760px) {
+  .jetta-hero {
+    min-height: auto;
+  }
+}
+

@@ -1,0 +1,24 @@
+# WordPress runtime files
+/index.php
+/license.txt
+/readme.html
+/wp-*.php
+/xmlrpc.php
+/wp-admin/
+/wp-includes/
+/wp-content/index.php
+/wp-content/plugins/
+/wp-content/uploads/
+/wp-content/upgrade/
+/wp-content/cache/
+
+# Local config and secrets
+/wp-config.php
+/wp-config-local.php
+.env
+*.sql
+*.sql.gz
+
+# OS/editor files
+.DS_Store
+Thumbs.db

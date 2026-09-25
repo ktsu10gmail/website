@@ -7,6 +7,7 @@ This repository is the public marketing website for Jetta:
 - Local website path: /home/ksu/www
 - Branch: main
 - Remote: origin
+- Platform: WordPress with a custom block theme
 
 The production Jetta application is separate:
 
@@ -37,6 +38,15 @@ mount app filesystems, or create hidden dependencies on the app server.
    - planned feature: "Planned..."
    - uncertain feature: do not publish
 5. Link users to https://golfgame.jetta.com for the application experience.
+
+## WordPress Development Rule
+
+WordPress should own editable page content, images, navigation, and future
+template adjustments through the admin UI. Git should own the custom theme,
+documentation, and repeatable setup notes.
+
+Track the custom theme in `wp-content/themes/jetta`. Do not commit WordPress
+core, `wp-config.php`, uploaded media, cache files, database dumps, or secrets.
 
 ## Core Product Story
 
