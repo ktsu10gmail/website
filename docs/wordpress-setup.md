@@ -5,10 +5,19 @@ edited through the WordPress admin UI. The Git repository should track the
 custom Jetta theme and project documentation, not uploaded media or generated
 WordPress core files.
 
-## Current Server Finding
+## Current Server Status
 
-As of 2026-09-25, this server exposes `nginx`, but PHP, WP-CLI, and MySQL/MariaDB
-were not available from the shell PATH during setup.
+As of 2026-09-25, the WordPress runtime is installed and active:
+
+- nginx 1.24
+- PHP 8.3 FPM
+- MariaDB 10.11
+- WP-CLI 2.12
+- WordPress installed in `/home/ksu/www`
+- Custom theme `jetta` activated
+
+The document root remains `/home/ksu/www`. nginx runs as `www-data`, so
+`www-data` has execute-only ACL traversal access on `/home/ksu`.
 
 ## Recommended Runtime
 
@@ -50,4 +59,3 @@ Do not track:
 - cache files
 - database dumps
 - secrets
-
